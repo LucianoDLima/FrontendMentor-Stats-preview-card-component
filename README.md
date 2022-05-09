@@ -11,7 +11,7 @@ Thanks for checking out this front-end coding challenge.
 ## Links
 
 - [Solution URL](https://www.frontendmentor.io/solutions/nft-preview-scss-and-horizontal-media-query-ryjOJM4Uc)
-- [Live Site UR](https://lucianodlima.github.io/FrontendMentor-NFT-Preview/)
+- [Live Site UR](https://lucianodlima.github.io/FrontendMentor-Stats-preview-card-component/)
 
 
 
