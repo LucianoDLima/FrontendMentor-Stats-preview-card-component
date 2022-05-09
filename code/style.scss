@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+@import "_root.scss";
+@import "_reset.scss";
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: $fs;
+    font-family: $fm-100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: $very-dark-blue;
+
+}
+
+.stats-card {
+    background-color: $dark-desaturated-blue;
+    display: flex;
+    flex-direction: row-reverse;
+    min-width: 111rem;
+    max-width: 111rem;
+    min-height: 44.6rem;
+    max-height: 44.6rem;
+    border-radius: $borders;
+
+    @media screen and (max-width: $mobile) {
+        flex-direction: column;
+        min-width: 34.5rem;
+        max-width: 34.5rem;
+        min-height: 80rem;
+        max-height: 80rem;
+
+        transform: scale(.85);
+        
+        
+    }
+
+    .stats-card-background {
+        position: relative;
+        background-image: url(../images/image-header-desktop.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        max-width: 53rem;
+        border-top-right-radius: $borders;
+        border-bottom-right-radius: $borders;
+
+        @media screen and (max-width: $mobile) {
+            background-image: url(../images/image-header-mobile.jpg);
+            min-height: 25rem;
+
+            border-top-left-radius: $borders;
+            border-bottom-right-radius: unset;
+
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            border-top-right-radius: $borders;
+            border-bottom-right-radius: $borders;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            top: 0;
+            background-color: $soft-violet;
+            mix-blend-mode:color;
+            opacity: 1;
+            z-index: 10;
+
+            @media screen and (max-width: $mobile) {
+                border-top-left-radius: $borders;
+                border-bottom-right-radius: unset;
+                
+            }
+        }
+    }
+
+    .stats-card-body {
+        padding: 6.95rem 7.2rem;
+
+        @media screen and (max-width: $mobile) {
+            padding: 5rem 4rem;
+        }
+
+        .stats-card-main-text {
+            margin-bottom: 7rem;
+
+            @media screen and (max-width: $mobile) {
+                margin-bottom: 4rem;
+                
+            }
+
+            
+
+            h1 {
+                font-size: calc(#{$fs} + 2.1rem);
+                font-family: $fm-100;
+                font-weight: 700;
+                color: $white;
+                margin-bottom: 2.5rem;
+
+                span {
+                    color: $soft-violet;
+                }
+
+                @media screen and (max-width: $mobile) {
+                    font-size: calc(2em - .1em);
+                    text-align: center;
+                    margin-bottom: 2rem;
+                }
+            }
+
+            p {
+                line-height: 1.6;
+                color: $transparent-white-200;
+
+                @media screen and (max-width: $mobile) {
+                    text-align: center;
+
+                    br {
+                        display: none;
+                    }
+                    
+                }
+            }
+        }
+
+        .stats-card-footer {
+            display: flex;
+            font-family: $fm-100;
+    
+            li {
+                line-height: 1.6;
+                p:first-child {
+                    color: $white;
+                    font-size: calc(#{$fs} + .85rem);
+                    font-weight: 700;
+                }
+
+                p:last-child {
+                    color: $transparent-white-200;
+                    text-transform: uppercase;
+                    font-size: calc(#{$fs} - .1rem);
+                    font-weight: 400;
+                }
+            }
+
+            li:not(:last-child) {
+                margin-right: 6rem;
+            }
+
+            @media screen and (max-width: $mobile) {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+
+                li:not(:last-child) {
+                    margin-right: unset;
+                    margin-bottom: 1.5rem;
+                }
+                
+            }
+        }
+    }
+}
+
+footer {
+    position: absolute;
+    right: 3%;
+    bottom: 3%;
+
+    p {
+        color: $transparent-white-200;
+        text-align: center;
+
+        a {
+            color: $transparent-white-100;
+
+            &:hover {
+                color: $soft-violet;
+            }
+        }
+    }
+
+    @media screen and (max-width:800px) {
+        display: none;
+        
+    }
+    
+}

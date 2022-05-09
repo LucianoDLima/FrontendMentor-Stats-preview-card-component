@@ -1,1 +1,17 @@
-# FrontendMentor-Stats-preview-card-component
+# Frontend Mentor - Stats preview card component
+
+![Design preview for the Stats preview card component coding challenge](./design/desktop-preview.jpg)
+
+## Welcome! 👋
+
+Thanks for checking out this front-end coding challenge.
+
+[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+
+## Links
+
+- [Solution URL](https://www.frontendmentor.io/solutions/nft-preview-scss-and-horizontal-media-query-ryjOJM4Uc)
+- [Live Site UR](https://lucianodlima.github.io/FrontendMentor-NFT-Preview/)
+
+
+
